@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>DATINA | Contact</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="index.js" type="text/javascript"></script>
+  <script src="events/events.js" type="text/javascript"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Righteous&display=swap"
+    rel="stylesheet">
+
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <section id="header">
+    <img src="assets/logo.jpg" id="logo" />
+    <h1>DATINA Seattle</h1>
+    <div id="nav-buttons">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+  </section>
+  <!-- END HEADER -->
+
+  <section class="section" style="background-color: whitesmoke; align-items: unset;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1343.4417744615237!2d-122.19289929168762!3d47.66725860109157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549012d03c82b30d%3A0xc585ad07a0397ea0!2s11200%20NE%2068th%20St%2C%20Kirkland%2C%20WA%2098033!5e0!3m2!1sen!2sus!4v1665013612041!5m2!1sen!2sus"
+      style="flex: 1; border: 0; filter: grayscale(0.5);" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="section">
+    <h2 class="smaller">CONTACT</h2>
+    <!-- <p style="text-align: center;">
+      Datina Folk Ensemble is an organization focused on educating individuals about Romanian traditional arts.
+      Ansamblul Folcloric Datina este o organizație dedicată educării indivizilor despre tradiția românească.
+    </p> -->
+    <div id="contact">
+      <label for="subject">Subject:</label>
+      <input type="text" id="form-subject" name="subject" required minlength="0">
+      <label for="message">Message:</label>
+      <textarea name="message" id="form-body"></textarea>
+      <button id="contact-submit">Submit</button>
+    </div>
+  </section>
+
+  <section id="footer" class="img-bg" style="--src: url('assets/masks.png')">
+    <div style="width: 70vw; height: 1px; background-color: white;"></div>
+    <div style="display: flex; flex-direction: row;">
+      <a href="https://stefantodoran.github.io/" target="_blank" class="footer-link">
+        <img src="assets/design.png" height="15" alt="" class="tiny-logo" style="margin-right: 0.5em;" />
+        <div class="paragraph-tiny">Website Design</div>
+      </a>
+      <a href="https://www.facebook.com/datinaseattle/" target="_blank" class="footer-link">
+        <img src="assets/facebook.svg" height="15" alt="" class="tiny-logo" style="margin-right: 0.3em;" />
+        <div class="paragraph-tiny">Our Page</div>
+      </a>
+      <a href="#header" class="footer-link">
+        <div class="paragraph-tiny">&copy; DATINA</div>
+      </a>
+    </div>
+  </section>
+
+</body>
+
+</html>

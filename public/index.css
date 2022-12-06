@@ -1,0 +1,285 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  --main-color: #C02A3F;
+}
+
+body, input, label, textarea {
+  font-family: 'Nunito';
+  font-display: optional;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: min(100px, 20vw);
+  color: var(--main-color);
+  margin: 0;
+  font-family: 'Righteous';
+  font-display: optional;
+}
+
+p {
+  max-width: min(80vw, 45em);
+  font-weight: 200;
+}
+
+#header {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo {
+  height: 10vh;
+  margin-right: 1em;
+}
+
+#nav-buttons {
+  margin-left: auto;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-inline-start: 0.5em;
+  font-weight: 200;
+  transition: opacity 0.5s ease;
+}
+
+a.nav-link:hover {
+  opacity: 0.5;
+}
+
+a.nav-link.active {
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+.section {
+  min-height: 50vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+.section.img-bg h1, .section.img-bg p {
+  color: white;
+}
+
+.img-bg {
+  background-image: var(--src);
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  padding: 0.5em 1em;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+#table {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+}
+
+.card .img-bg, .card .desc {
+  flex: 1;
+}
+
+.row {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.row div {
+  flex: 1;
+}
+
+.section, .row div, #footer, .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row h1 {
+  color: var(--main-color)
+}
+
+.card p, .card h1 {
+  margin: 0 10%;
+}
+
+.card h1 {
+  color: var(--main-color)
+}
+
+#footer {
+  height: 30vh;
+  align-items: center;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 1em;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.5;
+}
+
+.paragraph-tiny {
+  font-size: 12px;
+}
+
+#events {
+  height: unset;
+  background: none;
+  overflow-x: scroll;
+  max-width: 80vw;
+  padding: 1em 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.event {
+  border: 1px solid lightgray;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  margin: 0 1em;
+  padding: 1em;
+  width: 300px;
+}
+
+.event h4, .event p {
+  margin: 0;
+}
+
+.event img {
+  height: 20vh;
+  margin-bottom: 0.5em;
+}
+
+#template {
+  display: none;
+}
+
+/* width */
+#events::-webkit-scrollbar {
+  height: 15px;
+}
+
+/* Track */
+#events::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+/* Handle */
+#events::-webkit-scrollbar-thumb {
+  background: #dadada;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+#events::-webkit-scrollbar-thumb:hover {
+  background: #ececec;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: min(80vw, 30em);
+}
+
+#contact-submit {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+}
+
+#contact-submit:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 20px 25px;
+  }
+
+  #table {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: row;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  #nav-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 0.2em 0;
+  }
+
+  h2.smaller {
+    font-size: min(80px, 15vw);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #header {
+    padding: 10px 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  .card.reverse {
+    flex-direction: column-reverse;
+  }
+
+  #events {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+}
