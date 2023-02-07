@@ -36,5 +36,14 @@
         );
       });
     }
+
+    // The scroll top button should work even without js enabled so it uses
+    // an anchor, however that appends an ugly '#scroll-top' to the url so
+    // for users with js enabled, we do this:
+    const scroll_btn = document.getElementById('scroll-top-button');
+    scroll_btn.addEventListener('click', (evt) => {
+      window.scrollTo({top: '0'});
+      evt.preventDefault();
+    });
   }
 })();

@@ -35,6 +35,11 @@
 
 const events = [
   {
+    "title": "Romanian Winter",
+    "date": "Sat, Dec 17th 2022",
+    "img": "events/event_3.jpg",
+  },
+  {
     "title": "Northwest Folklife Festival",
     "date": "Mon, May 27th 2020",
     "img": "events/event_1.png",
